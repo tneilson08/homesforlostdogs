@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg">
+  <title>Homes for Lost Dogs</title>
+</head>
+
+<body>
+
+  <section id="home" class="home">
+
+    <div class="title">
+      <div class="logo-box">
+        <img class="logo" src="img/logo.png" alt="logo">
+      </div>
+
+      <div class="title-box">
+        <h1 class="title-desc">Search nearby animal shelters for dogs in need for a new home!</h1>
+      </div>
+    </div>
+
+    <div class="search">
+      <form id="search-form">
+        <div class="search-element">
+          <p class="search-title">Zip Code</p>
+          <input type="text" id="zip" class="form-entry" autocomplete="off">
+        </div>
+        <div class="search-element">
+          <p class="search-title">Distance (mi)</p>
+          <input type="number" id="distance" class="form-entry" autocomplete="off">
+        </div>
+        <div class="search-element">
+          <input id="search-btn" type="submit" value="Search!" class="search-btn">
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- <button type="submit" id="next-page" class="search-btn">Next</button>
+  <button type="submit" id="previous-page" class="search-btn">Previous</button> -->
+
+  <!----------------------------------- RESULTS SECTION ----------------------------------->
+  <!----------------------------------- RESULTS SECTION ----------------------------------->
+
+  <section class="results-container">
+
+    <h2 id="result-text" class="results-text">Fill in a zip code and distance to find nearby dogs!</h2>
+
+    <div id="page-results-top" class="page-results"></div>
+
+    <div id="results" class="results">
+      <!-- <div class="dog-result">
+  <div class="thumb-photo-box">
+  <img id="thumbnail" class="thumbnail-result" src="img/photo-placeholder.png" alt="photo">
+  </div>
+   
+        <div class="info-result" data-dogid="${dog.id}">
+  <p id="name" class="result-name">Name</p>
+  <p id="breed" class="result-other-info">Breed</p>
+  <p id="distance" class="result-other-info">Distance</p>
+  </div>
+  </div> -->
+    </div>
+
+    <div id="page-results" class="page-results">
+      <a><button id="previous-page" class="previous-page">Previous</button></a>
+      <a><button id="next-page" class="next-page">Next</button></a>
+    </div>
+
+  </section>
+
+
+  <!----------------------------------- INDIVIDUAL DOG PROFILE ----------------------------------->
+  <!----------------------------------- INDIVIDUAL DOG PROFILE ----------------------------------->
+
+  <section id="dog-profile">
+    <!-- <div class="dog-modal">
+  <div class="dog-profile-intro">
+  <div class="photo-section">
+   
+          <div class="photo-container">
+  <img id="profile-photo" class="profile-photo" src="${thumbnail}" alt="">      
+  </div>
+   
+        </div>
+   
+        <div class="profile-info-section">
+   
+          <h1 id="profile-name" class="profile-name">${dog.name}</h1>
+  <br>
+  <img class="breed-icon" src="img/breed-icon.svg" alt="">
+  <p id="profile-breed" class="attributes">${dog.breeds.primary}</p>
+  <br>
+  <img class="location-icon" src="img/location-icon.svg" alt="">
+  <p id="profile-location" class="attributes">${dog.contact.address.city}, ${dog.contact.address.state}</p>
+  <br><br>
+  <p class="attributes attr-addt">Gender: ${dog.gender}</p>
+  <p class="attributes attr-addt">Age: ${dog.age}</p>
+  <p class="attributes attr-addt">Size: ${dog.size}</p>
+  <p class="attributes attr-addt">Colors: ${dog.colors.primary}</p>
+   
+        </div>
+  </div>
+   
+      <div class="about-info-section">
+  <div class="about-info">
+  <h2 class="about-title">Personality</h2>
+  <img class="personality-icon" src="img/personality-icon.svg">
+  <p class="about-text">${dog.environment.children}</p>
+  <p class="about-text">${dog.environment.dogs}</p>
+  <p class="about-text">${dog.environment.cats}</p>
+  <br>
+  <h2 class="about-title">Health</h2>
+  <img class="health-icon" src="img/health-icon.svg">
+  <p class="about-text">${dog.attributes.spayed_neutered}</p>
+  <p class="about-text">${dog.attributes.shots_current}</p>
+  <p class="about-text">${dog.attributes.special_needs}</p>
+  </div>
+   
+        <div class="contact-info">
+  <h2 class="contact-title">Reach Out</h2>
+  <img class="house-icon" src="img/house-icon.svg">
+  <p class="contact-text">${dog.contact.email}</p>
+  <p class="contact-text">${dog.contact.phone}</p>
+  <p class="contact-text">${dog.contact.address.address1}</p>
+  <p class="contact-text">${dog.contact.address.city}, ${dog.contact.address.state} ${dog.contact.address.postcode}</p>
+   
+        </div>
+   
+      </div>
+   
+      <div class="single-btn-container">
+  <button id="return-search" class="return-search">Return to Search</button>
+  </div>
+  </div> -->
+
+  </section>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
